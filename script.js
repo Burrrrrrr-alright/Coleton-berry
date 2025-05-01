@@ -41,4 +41,30 @@ gsap.utils.toArray(".project-card").forEach((card, i) => {
     delay: i * 0.2,
     ease: "power2.out"
   });
+  gsap.set(".graphic", { opacity: 0, scale: 0.5, y: -100 });
+
+gsap.to(".g1", {
+  opacity: 1,
+  y: 0,
+  scale: 1,
+  duration: 1.2,
+  ease: "power3.out",
+  delay: 0.2
+});
+gsap.to(".g2", {
+  opacity: 1,
+  y: 0,
+  scale: 1,
+  duration: 1.2,
+  ease: "power3.out",
+  delay: 0.5
+});
+gsap.to(".g3", {
+  opacity: 1,
+  y: 0,
+  scale: 1,
+  duration: 1.2,
+  ease: "power3.out",
+  delay: 0.8
+});
 });
